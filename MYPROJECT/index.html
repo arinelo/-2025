@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Украинская кухня</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+    background-image: url('header.png'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .intro p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .dish-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .dish {
+            width: 30%;
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .dish img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .dish-info {
+            padding: 20px;
+        }
+
+        .dish-info h3 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .dish-info p {
+            font-size: 1.1em;
+            color: #777;
+        }
+
+        .dish:hover {
+            transform: translateY(-10px);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Українська кухня</h1>
+    </header>
+
+    <div class="container">
+        <section class="intro">
+            <h2>Смак України – традиції, що єднають</h2>
+            <p>Ласкаво просимо на сайт «Смак України» – простір, де оживають смаки та аромати справжньої української кухні. 
+                Тут ви знайдете найкращі рецепти традиційних страв, дізнаєтеся про історію української гастрономії та 
+                відкриєте для себе кулінарні традиції нашого народу</p>
+                <p>На нашому сайті ви знайдете</p>
+        </section>
+
+        <section class="dish-section">
+            <div class="dish">
+                <img src="recipe.jpg">
+                <div class="card" onclick="location.href='recipe.html'">
+                    <h3> Рецепти </h3>
+                    <p>покрокові інструкції приготування найулюбленіших українських страв із фото</p>
+                </div>
+            </div>
+            <div class="dish">
+                <img src="blog.jpg">
+                <div class="card" onclick="location.href='blog.html'">
+                    <h3>Блог та статті </h3>
+                    <p>цікаві розповіді про історію, традиції та особливості національної кухні</p>
+                </div>
+            </div>
+            <div class="dish">
+                <img src="wer.jpg">
+                <div class="card" onclick="location.href='porady.html'">
+                <div class="dish-info">
+                    <h3>Сезонні поради </h3>
+                    <p>що готувати з урахуванням пори року та доступних продуктів</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Смак України</p>
+    </footer>
+    <script src="poll.js"></script>
+
+</body>
+</html>
+
